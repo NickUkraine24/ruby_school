@@ -1,3 +1,3 @@
 "Hello World"
 p "Hello World"
-"Hello World"
+print "Hello World"
