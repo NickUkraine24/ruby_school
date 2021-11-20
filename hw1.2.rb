@@ -1,4 +1,4 @@
-
+# ex2
 puts "\nTYPES OF VARIABLES\n\n"
 
 # Integer variable
@@ -29,9 +29,12 @@ puts "Array => #{array}"
 hash_variable = { car: "Lada", model: "VAZ-2107", guarantee: "immortal" }  #speed: 150*imaginations}
 puts "HASH => #{hash_variable}\n\n"
 
+
 #########################################################
 
-puts "FRUITS SUM\n\n"
+
+# ex3-ex4
+puts "FRUITS SUM AND EMPTY HASH/ARRAY\n\n"
 
 # fruits = apple + prume
 apple = 130 
@@ -39,8 +42,23 @@ prume = 170
 fruits = apple + prume
 puts "fruits: apple + prume = #{fruits}\n\n"
 
-##########################################################
+# empty hash
+h = Hash.new
+h = Hash[]
+h = {}
+puts "Empty hash => #{h}"
 
+# empty array
+a = Array.new 
+a = Array[]
+a = []
+puts "Empty array => #{a}\n\n"
+
+
+#####################################################
+
+
+# ex5-ex8
 puts "ARRAY(FOOD) MANIPULATION\n\n"
 
 # food array 
@@ -54,8 +72,11 @@ puts "Last  element => #{food.last}"
 food.push("yogurt")
 puts "Array 'food' (UPDATE) => #{food}\n\n"
 
+
 ###########################################################
 
+
+# ex9
 puts "HASH(COUNTRY)\n\n"
 
 # country hash
@@ -63,8 +84,11 @@ country = { Ukraine: 380, Poland: 48, Japan: 81 }
 # country = { 380: Ukraine, 48: Poland, 81: Japan } - ?
 puts "HASH 'country' => #{country}\n\n"
 
+
 ###########################################################
 
+
+# ex10
 puts "WORD(COURSE) MANIPULATION\n\n"
 
 # course word
