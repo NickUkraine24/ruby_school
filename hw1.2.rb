@@ -115,3 +115,4 @@ str1 = str.gsub("ourse", "anada")
 puts str1
 str2 = str1.upcase
 puts str2
+
