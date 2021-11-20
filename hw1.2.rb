@@ -90,9 +90,9 @@ p food.first
 
 #Task 7
 
-print "first: "
+print "last: "
 p food[2]
-print "first: "
+print "last: "
 p food.last
 
 #Task 8
@@ -115,4 +115,3 @@ str1 = str.gsub("ourse", "anada")
 puts str1
 str2 = str1.upcase
 puts str2
-
