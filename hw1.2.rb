@@ -1,19 +1,25 @@
 
 #2 Create variables by all types of Ruby (Integer, Boolean, String, Symbol, Array, and Hashes) and output these variables (p, puts, print).
-a = 1
+a = 1 #Integer
 puts (a)
-b = 0.54
+b = 0.54 #Float
 p b
-name = "Taras"
+name = "Taras" #String
 puts (name)
-car = ['Renault', 'Opel', 'Dacia', 'Audi', 'BMW']
+question = 'Do you have a car?' #Simbol
+puts (question)
+car = ['Renault', 'Opel', 'Dacia', 'Audi', 'BMW'] #Array
 puts (car)
-have_car = true
+have_car = true #Boolean
 puts have_car
 dislake_TV = false
 puts dislake_TV
-none = nil
+none = nil #nil
 puts (none)
+HOUR = 24
+puts (HOUR) #CONST
+months = {day: 'Sunday', week: '1'} #Hash
+p months.keys
 
 #3 Create an apple variable that equals 130, a prune variable that equals 170, and fruits that add apple and prune.
 apple = 130
@@ -36,9 +42,12 @@ food.push("yogurt")
 puts food
 
 #9 Create a hash with 3 key/value pairs representing country codes (like ES) & their country names (like Spain)
-{ ES: 'Spain', UA: 'Ukraine', PL: 'Poland' }
-
+country = { ES: 'Spain', UA: 'Ukraine', PL: 'Poland' }
+p country.values
 #10 Create string with name "course"
 string = "course"
-puts string.sub("ourse", "anada")
+#Change "ourse" on "anada".
+string = string.sub("ourse", "anada")
+puts string
+#do uppercase string.
 puts string.upcase()
