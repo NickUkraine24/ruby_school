@@ -50,7 +50,7 @@ food.push('yogurt')
 
 # ex8
 # Create a hash with 3 key/value pairs representing country codes (like ES) & their country names (like Spain)
-{ code: 'ES', country: 'Spain' }
+{ "ES" => "Spain", "UK" => "United Kingdom", "ID" => "Indonesia" }
 
 # ex9
 # Create string with name "course". Change "ourse" on "anada" & do uppercase string.
