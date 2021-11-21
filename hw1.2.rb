@@ -10,7 +10,7 @@ float = 10.1
 puts "Float => #{float}"
 
 # Boolean variable
-boolean = true if boolean.nil? 
+boolean = true
 puts "Boolean => #{boolean}"
 
 # String variable
