@@ -17,3 +17,4 @@ food.push ('yogurt')
 'course'.gsub('ourse','anada')
 country = 'canada'
 country.upcase
+
