@@ -52,4 +52,9 @@ food.push('yogurt')
 # Create a hash with 3 key/value pairs representing country codes (like ES) & their country names (like Spain)
 { code: 'ES', country: 'Spain' }
 
+# ex9
+# Create string with name "course". Change "ourse" on "anada" & do uppercase string.
+word = "course" 
+word_change = word.gsub("ourse", "anada").upcase
+puts(word + "\n" + word_change)
 
