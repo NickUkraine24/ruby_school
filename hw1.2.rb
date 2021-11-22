@@ -6,7 +6,7 @@ b = 0.54 #Float
 p b
 name = "Taras" #String
 puts (name)
-question = 'Do you have a car?' #Simbol
+question = :text #Simbol
 puts (question)
 car = ['Renault', 'Opel', 'Dacia', 'Audi', 'BMW'] #Array
 puts (car)
@@ -29,8 +29,11 @@ puts fruits
 
 #4 Create an empty hash and array by all opportunities.
 Array.new
+[]
+Array[]
 Hash.new
-
+{}
+Hash[]
 #5 Create an array with the name of food with these values: “bacon”, “orange”, “apple”
 food = Array["bacon", "orange", "apple"]
 #6 Get the first element of the food array.
@@ -47,7 +50,5 @@ p country.values
 #10 Create string with name "course"
 string = "course"
 #Change "ourse" on "anada".
-string = string.sub("ourse", "anada")
+string = string.sub("ourse", "anada").upcase
 puts string
-#do uppercase string.
-puts string.upcase()
