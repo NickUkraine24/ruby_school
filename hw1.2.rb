@@ -19,14 +19,15 @@ puts "String => " + string
 
 # Symbol variable
 symbol = :immutable 
-puts "Symbol => :#{symbol}"
+print "Symbol => :#{symbol}"
+puts " => id (constant) => #{symbol.object_id}"
 
 # Array variable
 array = [2, 0, 2, 1]
 puts "Array => #{array}"
 
 # HASH variable
-hash_variable = { car: "Lada", model: "VAZ-2107", guarantee: "immortal" }  #speed: 150*imaginations}
+hash_variable = { car: "Lada", model: "VAZ-2107", guarantee: "immortal" }  
 puts "HASH => #{hash_variable}\n\n"
 
 
@@ -81,7 +82,6 @@ puts "HASH(COUNTRY)\n\n"
 
 # country hash
 country = { Ukraine: 380, Poland: 48, Japan: 81 }
-# country = { 380: Ukraine, 48: Poland, 81: Japan } - ?
 puts "HASH 'country' => #{country}\n\n"
 
 
