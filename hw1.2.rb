@@ -9,14 +9,14 @@ wow_string = "OMG, Shopify is using Ruby!"
 symbolic = :coding
 cars_array = ['Ford', 'Mercedes', 'BMV', 'Lamborghini']
 rocket_hash = { :name => 'Bitcoin', :direction => 'ToTheMoon' }
-puts(int, float_num)
-puts (int + float_num)
-puts ((int + float_num).class)
-puts(truly, falsy)
-puts(wow_string) 
-puts(symbolic) 
-puts(cars_array) 
-puts(rocket_hash)
+puts int, float_num
+puts int + float_num
+puts (int + float_num).class
+puts truly, falsy
+puts wow_string 
+puts symbolic 
+puts cars_array 
+puts rocket_hash
 
 # ex2
 # Create an apple variable that equals 130, a prune variable that equals 170, and fruits that add apple and prune.
@@ -59,5 +59,5 @@ food << 'yogurt'
 # Create string with name "course". Change "ourse" on "anada" & do uppercase string.
 word = "course" 
 word_change = word.gsub("ourse", "anada").upcase
-puts(word + "\n" + word_change)
+puts word + "\n" + word_change
 
