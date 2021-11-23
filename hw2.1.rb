@@ -11,43 +11,45 @@ false == (847 == '874') # => true
 
 # Ex2
 
-puts "Enter age"
-age = gets.to_i
-puts "Enter gender ('male' or 'female')"
+puts 'Enter age'
+@age = gets.to_i
+puts 'Enter gender ("male" or "female")'
 gender = gets.chomp
 
-if (gender.eql?'male') 
-  if (age > 18 && age < 25)
-    puts "He study at university"
-  elsif (age >= 25 && age <= 60)
-    puts "He has a job"
-  else puts "He needs to relax"
+def check_age(gender_1)
+  if @age > 18 && @age < 25
+    puts "#{gender_1} study at university"
+  elsif @age >= 25 && @age <= 60
+    puts "#{gender_1} has a job"
+  else 
+    puts "#{gender_1} needs to relax"
   end
-elsif (gender.eql?'female') 
-  if (age > 18 && age < 25)
-    puts "She study at university"
-  elsif (age >= 25 && age <= 60)
-    puts "She has a job"
-  else puts "She needs to relax"
-  end
-else puts 'Incorrect data'
+end
+
+case gender
+  when 'male'
+    check_age('He')
+  when 'female'
+    heck_age('She')
+  else 
+    puts 'Incorrect data'
 end
 
 
 # Ex3
 
-puts "Enter age"
+puts 'Enter age'
 age = gets.to_i
 
-(age > 18 && age < 25) ? (puts "He study at university") : (puts "He has a job")
+age > 18 && age < 25 ? puts('He study at university') : puts('He has a job')
 
 
 # Ex4
 
-fruits = ['apple', 'banana', 'pear', 'kiwi', 'melon', 'pomegranate', 'tangerine', 'fig']
-vegetables = ['cucumber', 'garlic', 'carrot', 'tomato', 'pepper', 'corn', 'radish', 'broccoli']
+fruits = [ 'apple', 'banana', 'pear', 'kiwi', 'melon', 'pomegranate', 'tangerine', 'fig' ]
+vegetables = [ 'cucumber', 'garlic', 'carrot', 'tomato', 'pepper', 'corn', 'radish',  'broccoli' ]
 
-puts "Fruit ot vegetable?"
+puts 'Fruit ot vegetable?'
 your_choise = gets.chomp;
 
 case your_choise
@@ -67,13 +69,13 @@ end
 y = 9
 x = 10
 if (x + 1) <= (y)
-  puts "Alright."
+  puts 'Alright.'
 elsif (x + 1) >= (y)
-  puts "Alright now!"
+  puts 'Alright now!'
 elsif (y + 1) == x
-  puts "ALRIGHT NOW!"
+  puts 'ALRIGHT NOW!'
 else
-  puts "Alrighty!"
+  puts 'Alrighty!'
 end
 
 
