@@ -28,9 +28,11 @@ fruits = apple + prune
 # Create an empty hash and array by all opportunities.
 {}
 Hash.new
+Hash[]
 
 []
 Array.new
+Array[]
 
 # ex4
 # Create an array with the name of food with these values: “bacon”, “orange”, “apple”.
@@ -46,7 +48,8 @@ food[-1]
 
 # ex7
 # Add a new element into the array: “yogurt”
-food.push('yogurt')
+food.push( obj 'yogurt')
+food << 'yogurt'
 
 # ex8
 # Create a hash with 3 key/value pairs representing country codes (like ES) & their country names (like Spain)
