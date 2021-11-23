@@ -29,6 +29,7 @@ else
 end
 
 
+
 # ex4
 age1 = 19
 
@@ -37,6 +38,7 @@ result = age1 > 18 && age1 < 25 ? "he/she study at university"
        : "he/she needs to relax"
 
 puts result
+
 
 
 # ex5
@@ -48,6 +50,8 @@ when word == "vegetable"
 else
 	puts "we don't know this word"
 end
+
+
 
 # ex6
 puts "ex6 => Alright now!"
