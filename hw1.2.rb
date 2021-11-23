@@ -1,3 +1,4 @@
+#some styling changes
 # task 2
 num = 12
 float = 2.27
@@ -5,11 +6,7 @@ boolean = false
 str = "Hello"
 sym = :hello
 arr = ["Lviv", true, 121, 11.44]
-person = {
-    first_name: "Olia",
-    last_name: "Savka",
-    age: 24
-}
+person = { first_name: "Olia", last_name: "Savka", age: 24 }
 puts(num, float, boolean, str, sym, arr, person)
 
 #task3
@@ -20,15 +17,9 @@ pruts fruits
 
 #task4
 fruits = Hash.new()
-fruits_2 = {
-    :bananas => 21,
-    :apples => 10
-}
+fruits_2 = { :bananas => 21, :apples => 10 }
 
-fruits_3 = {
-    bananas: 21,
-    apples: 10
-}
+fruits_3 = { bananas: 21, apples: 10 }
 
 arr = Array.new()
 arr = [true, 18, "meow"]
@@ -45,14 +36,12 @@ puts food.last
 
 #task8
 food << "yogurt"
-# food.push("yougurt")
+# food.push("yogurt")
 p food
 
 #task9
-codes = {UK: "United Kingdom", UA: "Ukraine", DK: "Denmark"}
+codes = { UK: "United Kingdom", UA: "Ukraine", DK: "Denmark" }
 p codes
 
 #task10
-str = "course"
-p str.gsub!("ourse", "anada")
-p str.upcase!
+p "course".gsub!("ourse", "anada").upcase!
