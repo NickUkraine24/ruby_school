@@ -33,9 +33,7 @@ end
 # ex4
 age1 = 19
 
-result = age1 > 18 && age1 < 25 ? "he/she study at university" 
-       : age1 >= 25 && age1 <= 60 ? "he/she has a job" 
-       : "he/she needs to relax"
+age1 > 18 && age1 < 25 ? "he/she study at university" : "he/she needs to relax"
 
 puts result
 
