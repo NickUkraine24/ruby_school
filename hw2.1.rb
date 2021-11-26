@@ -40,10 +40,10 @@ puts result
 
 
 # ex5
-case word = "vegef"
-when word == "fruit"
+case "vegef"
+when "fruit"
 	puts ["ananas", "banana", "orange"]
-when word == "vegetable"
+when "vegetable"
 	puts ["potatoes", "carrot", "beet" ]
 else
 	puts "we don't know this word"
