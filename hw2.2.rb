@@ -1,5 +1,5 @@
 
-# 2. Get the name of the hash person
+# 2. Get the name of the hash person 
 person = { name: 'Bob', position: 'web developer', hobbies: 'painting' }
 puts person [ :name ]
 
