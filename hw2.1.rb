@@ -1,5 +1,5 @@
 #2. Write whether the following expressions return true or false:
-#a) (32 * 4) >= 129 #false
+#a) (32 * 4) >= 129 #false 
 #b) false != !true #false
 #c) true == 4 # false
 #d) false == (847 == '874') #true
