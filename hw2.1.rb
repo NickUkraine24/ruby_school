@@ -30,7 +30,7 @@ when 'fruits'
 when 'vegetables'
 	puts ['cucumber', 'tomato', 'sweet pepper'].sample
 else
-	puts 'we do not know this word'
+	puts "we don't know this word"
 end
 
 # Check the the result of the condition
