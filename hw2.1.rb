@@ -47,7 +47,7 @@ age > 18 && age < 25 ? puts('He study at university') : puts('He has a job')
 # Ex4
 
 fruits = [ 'apple', 'banana', 'pear', 'kiwi', 'melon', 'pomegranate', 'tangerine', 'fig' ]
-vegetables = [ 'cucumber', 'garlic', 'carrot', 'tomato', 'pepper', 'corn', 'radish',  'broccoli' ]
+vegetables = [ 'cucumber', 'garlic', 'carrot', 'tomato', 'pepper', 'corn', 'radish', 'broccoli' ]
 
 puts 'Fruit ot vegetable?'
 your_choise = gets.chomp;
