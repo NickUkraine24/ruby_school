@@ -1,4 +1,4 @@
-
+#!/usr/bin/env ruby
 #Task2
 person = {name: 'Bob', position: 'web developer', hobbies: 'painting'}
 person[:name]
