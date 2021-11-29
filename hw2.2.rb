@@ -3,6 +3,14 @@
 person = { name: 'Bob', position: 'web developer', hobbies: 'painting' }
 puts person [ :name ]
 
+# 3. Change hobbies onto an array with 3 random hobbies using all possible ways.
+person[:hobbies] = [ 'swiming', 'diving', 'dansing' ]
+# or
+hobbies_repl = [ 'swiming', 'diving', 'dansing' ]
+person[:hobbies] = hobbies_repl
+# or
+person.merge!({ hobbies: hobbies_repl })
+
 # 4. What the difference between merge and merge!
 cat = {name: "Tommy"}
 weight = {weight: "2 kg"}
