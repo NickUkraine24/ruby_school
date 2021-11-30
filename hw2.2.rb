@@ -14,6 +14,11 @@ puts "name: #{b}"
 array = ['programming', 'driving', 'baseball', 'gaming']
 new_person = person.merge({ hobbies: array.sample(3) })
 
+# person.[:hobbies] = array
+# person.store(:hobbies, array)
+# person.merge!(:hobbies array)
+
+
 puts new_person
 
 
