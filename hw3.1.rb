@@ -19,7 +19,7 @@ end
 begin
  str = "I will pass exams"
  str.mmmm
- rescue => error
+ rescue StandardError => error
  puts error.message
  puts "This is StandardError" 
 end
