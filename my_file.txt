@@ -1,1 +1,2 @@
-mmmm
+str = "I will pass exams"
+p str.mmmm
