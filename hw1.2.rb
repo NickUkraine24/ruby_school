@@ -39,7 +39,9 @@ hcountry={code: 'AL', name: 'Albania'}
 hcountry={code: 'BS', name: 'Bahamas'}
 
 #10
-'course'.gsub('ourse', 'anada')
+'course'.gsub('ourse', 'anada').upcase
+
+
 
 
 
