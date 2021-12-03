@@ -11,8 +11,8 @@ time = Time.new
 puts time.strftime("%Y-%m-%d %I:%M %P")
 
 # 3. Write an exception with a message "This person is not developer" for custom error when in person hash are value mentor and key position:
-begin
 person = { name: 'Den', age: 23, position: 'mentor' }
+begin
 raise "This person is not developer" if person.has_value?( 'mentor' ) && person.has_key?( :position )
 rescue => error
 	puts error
