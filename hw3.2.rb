@@ -41,7 +41,16 @@ p info_with_args('Tobi', '19/01/1986', 179, 83)
 
 
 
-# ex5
+# def info_with_args(*args)
+# 	all_args = *args
+# end
+
+# p info_with_args('Tobi', '19/01/1986', 179, 83)
+
+
+
+
+# ex5*
 def info_with_kwargs(name: 'Tobi', birthday: '19/01/1986', height: 179 , weight: 83)
 	#person_kwargs = [name, birthday, height, weight]
 	person_kwargs = []
@@ -51,3 +60,11 @@ end
 
 p info_with_kwargs()
 p info_with_kwargs(name: 'Archi', birthday: '07/08/2006', height: 154, weight: 49)
+
+
+
+# def info_with_kwargs(**kwargs)
+# 	all_kwargs = *kwargs
+# end
+
+# p info_with_kwargs(name: 'Archi', birthday: '07/08/2006', height: 154, weight: 49)
