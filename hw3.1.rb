@@ -1,10 +1,12 @@
 #!/usr/bin/env ruby
 
 # ex1
-f = File.open('test_file_hw_3.1.txt', 'r')
-puts f.read
+file = File.open('test_file_hw_3.1.txt', 'w+')
+file.write("Hello World")
+file.rewind
+puts file.read
 
-f.close
+file.close
 
 
 
@@ -14,12 +16,13 @@ puts time.strftime("%Y-%m-%d %I:%M %P")
 
 
 
-# ex3*
+# ex3
+person = { name: 'Den', age: 23, position: 'mentor' }
+
 begin
-	person = { name: 'Den', age: 23, position: 'actor' }
-	raise 'This person is not developer' if person[:position] != 'mentor'
-	#raise MyCustomError.new 'This person is not developer' if person[:position] != 'mentor'
-rescue => e
+	raise 'This person is not developer' if person[:position] == 'mentor'
+	#raise 'This person is not developer' if person.value?('mentor') && person.key?(:position)
+rescue StandardError => e
 	puts e
 end
 
