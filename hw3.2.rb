@@ -35,25 +35,21 @@ puts square(2)
 
 # Ex4
 
-my_data = { name: 'Katrin', birthday: '02.11.1996', height: 165, weight: 55 }
-
-def info_with_args(my_data)
-  return "Data is empty" if my_data.empty?
-  name, birthday, height, weight = my_data.values_at(:name, :birthday, :height, :weight)
-
-  "name: #{name}, birthday: #{birthday}, height: #{height}, weight: #{weight}"
+def info_with_args(*args)
+  name, birthday, height, weight = *args
+  p "name: #{name}, birthday: #{birthday}, height: #{height}, weight: #{weight}"
 end
 
-puts info_with_args(my_data)
+info_with_args('Katrin', '02.11.1996', 165, 55)
 
 
 # Ex5
 
-def info_with_kwargs(name: 'Katrin', birthday: '02.11.1996', height: 165, weight: 55)
-  "name: #{name}, birthday: #{birthday}, height: #{height}, weight: #{weight}"
+def info_with_kwargs(**kwargs)
+  p **kwargs
 end
 
-puts info_with_kwargs
+info_with_kwargs(name: 'Katrin', birthday: '02.11.1996', height: 165, weight: 55)
 
 
 
