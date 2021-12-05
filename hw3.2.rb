@@ -8,10 +8,10 @@ p greeting()
 
 #2 Write a program that includes a method called multiply that takes two arguments and returns
 # the result of multiplying the two numbers.
-def greeting(name, last_name)
-    puts "Hi, #{name}. Is yor last_name #{last_name}?"
+def multiply(a, b)
+    puts a*b
   end
-  p greeting("valentyna", "Oksenyuk")
+  p multiply(54, 78)
 
 #3 Create a method called square that takes a parameter number and then puts the squared result of the number
 # you pass through. To pass the test, square the number 2.
