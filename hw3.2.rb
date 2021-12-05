@@ -9,7 +9,7 @@ p greeting ('Andrii')
 #2
 
 def multiply(x,y)
-  return x * y
+   x * y
 end
 p multiply(2,3)
 
@@ -17,7 +17,7 @@ p multiply(2,3)
 #3
 
 def square(number)
-  return number * number
+   number * number
 end
 
 p square(2)
