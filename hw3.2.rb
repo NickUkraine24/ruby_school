@@ -1,8 +1,19 @@
-#Task 1
+#Task 1 variant 1
 def greeting(name = 'John')
   p  "Hello  #{name}"
 end
 greeting 'Taras'
+
+#Task 1 variant 2
+def greeting1(name)
+
+  if name.empty?
+    return p 'Hallo John'
+  end
+
+p "Hello #{name}"
+end
+greeting1('')
 
 #Task 2
 def multiply(x , y)
