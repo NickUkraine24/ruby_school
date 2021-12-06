@@ -1,33 +1,29 @@
-#!/Ruby26-x64/bin/ruby
+#1
+my_file = File.open("write.txt", 'w+')
+p my_file.write('Hello World')
+my_file.rewind
+p my_file.read
+my_file.close()
+
 #2
-person = {name: 'Bob', position: 'web developer', hobbies: ['runing', 'swiming', 'reading']}
+time = Time.now
+puts time.strftime("%Y-%m-%d %k:%M %p")
+
 #3
-person[:hobbies]
+person = { name: 'Den', age: 23, position: 'mentor' }
+begin 
+	if person[:position] == 'mentor'
+		raise "This person is not developer"
+	end
+rescue StandardError => e
+	puts e.class
+	puts e.message
+end
+
 #4
-cat = {name: "Tommy"}
-weight = {weight: "2 kg"}
-cat.merge!(weight)
-#5
-=begin
-cat = {name: "Tommy"}
-weight = {weight: "2 kg"}
-cat.merge!(weight)
-=end
-
-# cat = {name: "Tommy"}
-# weight = {weight: "2 kg"}
-# cat.merge!(weight)
-
-#6
-person.has_value?('Bob')
-#7
-person.delete(:position)
-#8
-a = 9
-b = 3
-a += b
-a -= b
-a *= b
-a /= b
-a %= b
-a **= b
+begin
+	mmm
+rescue StandardError => e
+	puts "This is StandardError"
+	puts e.message
+end
