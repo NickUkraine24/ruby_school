@@ -34,14 +34,14 @@ class Rectangle
 
   def width=(value)
     if value < 0
-      raise "Error: width - negative!"
+      raise "Error: width => negative!"
     end
     @width = value
   end
 
   def height=(value)
     if value < 0
-      raise "Error: heigh - negative!"
+      raise "Error: heigh => negative!"
     end
     @height = value
   end
