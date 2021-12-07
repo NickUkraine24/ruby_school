@@ -2,39 +2,35 @@
 
 # ex1
 def greeting(name: 'John')
-	"Hi, #{name}"
+	p "Hi, #{name}"
 end
 
-puts greeting()
-puts greeting(name: 'Tobi')
+greeting()
+greeting(name: 'Tobi')
 
 
 
-# ex2*
-#def multiply(a,b)
-def multiply(a: 3,b: 5)
-	a*b
+# ex2
+def multiply(a, b)
+	p a*b
 end
 
-p multiply() 
+multiply(3,5) 
 
 
 
 # ex3
 def square(number)
-	number**2
+	p number**2
 end
 
-p square(2)
+square(2)
 
 
 
-# ex4*
+# ex4
 def info_with_args(name, birthday, height, weight)
-	#person_args = [name, birthday, height, weight]
-	person_args = []
-
-	person_args << "#{name}, #{birthday}, #{height}, #{weight}"
+	p "#{name}, #{birthday}, #{height}, #{weight}"
 end
 
 p info_with_args('Tobi', '19/01/1986', 179, 83)
@@ -49,13 +45,9 @@ p info_with_args('Tobi', '19/01/1986', 179, 83)
 
 
 
-
-# ex5*
+# ex5
 def info_with_kwargs(name: 'Tobi', birthday: '19/01/1986', height: 179 , weight: 83)
-	#person_kwargs = [name, birthday, height, weight]
-	person_kwargs = []
-
-	person_kwargs << "name: #{name}, birthday: #{birthday}, height: #{height}, weight: #{weight}"
+	p "name: #{name}, birthday: #{birthday}, height: #{height}, weight: #{weight}"
 end
 
 p info_with_kwargs()
