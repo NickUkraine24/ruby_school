@@ -27,9 +27,9 @@ p square(2)
 #1
 def info_with_args(name, birthday, height, weight)
     puts 'My name is' + name
-    puts 'My birthday is' + birthday.to_s
-    puts 'My height is' + " #{height} "
-    puts 'My weight is' + " #{weight} "
+    puts 'My birthday is' + "#{birthday}"
+    puts 'My height is' + "#{height}"
+    puts 'My weight is' + "#{weight}"
 end
 
 info_with_args(name 'Svitlana', birthday 22, height 166, weight 65)
@@ -37,17 +37,16 @@ info_with_args(name 'Svitlana', birthday 22, height 166, weight 65)
 
 #2
 def info_with_args(name, birthday, height, weight)
-    all_args = [ " #{name}, #{birthday}, #{height}, #{weight} "]
+    p "name: #{name}, birthday: #{birthday}, height: #{height}, weight: #{weight}."
 end
   
-  p info_with_args('Svitlana' 22, 166, 65)
+info_with_args(name 'Svitlana', birthday 22, height 166, weight 65)
 
 
 
 #ex5
 def info_with_kwargs(name: 'Svitlana', birthday: 22, height: 166, weight: 65)
-    all_kwargs = [name, birthday, height, weight]
-
+    p "name: #{name}, birthday: #{birthday}, height: #{height}, weight: #{weight}."
 end
 
-p info_with_kwargs
+info_with_kwargs
