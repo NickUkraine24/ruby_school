@@ -1,3 +1,4 @@
+#?C:\Ruby26\bin\rubyw.exe
 #exercise 2
 
 puts (32*4)>=129 #false
