@@ -14,8 +14,7 @@ multiply(12,18)
 
 #task3
 def square(num)
-    res = num * num
-    p res
+    p num * num
 end
 
 square(2)
@@ -32,3 +31,4 @@ def info_with_kwargs(name: "Olia", birthday: "January, 19", height: 167, weight:
 end
 
 info_with_kwargs
+
