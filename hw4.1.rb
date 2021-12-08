@@ -33,12 +33,14 @@ class Rectangle
     @height = height
   end
   def area
-    begin
-     raise 'You mustn`t put negative numbers!' if @width < 0 || @height < 0
-     rescue Exception => e
-     puts e.message
-    end
-    puts @width*@height
+    if @width < 0 || @height < 0
+     begin
+      raise 'You mustn`t put negative numbers!'
+      rescue Exception => e
+      puts e.message
+     end
+    else puts @width*@height
+    end  
   end
 end
 
