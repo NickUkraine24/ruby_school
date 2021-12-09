@@ -49,4 +49,3 @@ rectangle = Rectangle.new
 rectangle.width = -12
 rectangle.height = 20
 p "Rectangle_area = #{rectangle.area}"
-end
