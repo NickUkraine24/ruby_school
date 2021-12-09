@@ -5,7 +5,6 @@ class Cat
    puts "I'm a cat, gimme food & pet me now!"
  end
 end
-cat = Cat.new
 3.times{Cat.meow}
 
 #2 Create a Rectangle class. Add width and height attributes, with methods to read and write each.
@@ -29,7 +28,7 @@ class Rectangle
   attr_reader :width, :height
   attr_writer :width, :height
   def area
-    width * height
+    width*height
   end
 
   def width=(value)
@@ -49,4 +48,4 @@ rectangle = Rectangle.new
 rectangle.width = -12
 rectangle.height = 20
 p "Rectangle_area = #{rectangle.area}"
-
+end
