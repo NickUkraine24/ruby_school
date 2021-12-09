@@ -1,6 +1,6 @@
 #!c:\Ruby26-x64\bin\ruby.exe
 
-#ex1
+ex1
 class Cat
     def meow
         puts " I'm a cat, gimme food & pet me now! "
@@ -11,56 +11,49 @@ cat = Cat.new
 3.times {cat.meow}
 
 
-#ex2
+ex2
 class Rectangle 
+attr_accessor :width, :height
 
-    def initialize(width, height)
+def initialize(width = 1, height = 1)
     @width = width
     @height = height
     end
 
-attr_reader :width, :height
-attr_writer :width, :height
-
-    def area(width, height) 
-    @area = width  *height
+def area
+    puts "area of a rectangle #{width * height}"
     end
 end
 
-multipluing = Rectangle.new
-p multipluing.area(15, 14)
-
-#ex3
-class Rectangle 
-    def width=(width)
-        @width = width
-        if width < 0
-        puts 'The width should be a plus value'
-    end 
-
-    def height=(height)
-        @height = height
-        if height < 0
-        puts 'The height should be a plus value'
-    end 
-
-    def area(width, height) 
-        @area = width * height
-    end
-
-    begin
-        data = area
-    if data < 0
-    rescue StandartError => error
-        p error.message
-        p "Negative value"
-    end
-end
-
-multipluing = Rectangle.new
-multipluing.width = -6
-multipluing.height = 3
+multipluing = Rectangle.new(15, 14)
 multipluing.area
 
-
-
+ex3
+class Rectangle
+    attr_reader :width, :height
+  
+    def width=(width)
+      if width < 0
+        raise "Error, width is negative"
+      end
+  
+      @width = width
+    end
+  
+    def height=(height)
+      if height < 0
+        raise "Error, height is negative"
+      end
+  
+      @height = height
+    end
+  
+    def area
+      width * height
+    end
+  end
+  
+  rectangle = Rectangle.new
+  rectangle.width = 9
+  rectangle.height = 13
+  p rectangle.area
