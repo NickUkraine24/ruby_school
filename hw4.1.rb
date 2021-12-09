@@ -48,4 +48,8 @@ rectangle = Rectangle.new
 rectangle.width = -12
 rectangle.height = 20
 p "Rectangle_area = #{rectangle.area}"
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> 396019765d3b0ae0ec01873a13d27a09b56e6153
