@@ -35,21 +35,29 @@ p r.area
 
 #Task 3
 class Rectangle
-  def check
-    begin
-      if @width<0 || @height<0
-        raise 'The negative value'
-      end
-    rescue StandardError => e
-      p e.message
-      p e.class
+  attr_reader(:width,:height)
+
+  def width=(width)
+    if width<0
+      raise "Width is negative"
     end
+    @width=width
+  end
+
+  def height=(height)
+    if height<0
+      raise "Height is negative"
+    end
+    @height=height
+  end
+
+  def area
+    width*height
   end
 end
 
 r=Rectangle.new(-7,5)
-r.check
+r.width =-5
+r.height =9
 p r.area
-
-r.check
 
