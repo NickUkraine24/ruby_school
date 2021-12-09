@@ -12,7 +12,7 @@ puts email("test1_2.course@example.com")
 # Write regexp that matches Ukrainian phone number like +38(050)123-1344.
 # If phone number match with regexp please return text like "This #{input_number} is valid"
 def phone_number(data)
-if "data".match(/^.\d{2}.\d{3}.\d{3}.\d{4}$/)
+if data.match(/^.\d{2}.\d{3}.\d{3}.\d{4}$/)
   puts("This phone number: #{"+38(050)123-1344"} is valid")
 else
   puts("Wrong phone number")
