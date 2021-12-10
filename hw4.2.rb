@@ -12,6 +12,5 @@ end
 input_number = '+38(050)123-1344'
                       
 if input_number.match(/^\+\d+\(\d+\)\d+\-\d+$/)
-    
     puts "This #{input_number} is valid"
 end
