@@ -1,17 +1,62 @@
 #!/usr/bin/env ruby
 
 # ex1
-input_email = 'test1_2.course@example.com'
-
-if input_email.match(/\w+\d+.\w+@\w+.\w+$/)
-    puts "This #{input_email} is valid"
+class Confection
+  def prepare
+    puts "Baking at 350 degrees for 25 minutes."
+  end
 end
 
+
+class Cupcake < Confection
+    def prepare
+        super
+        puts "Applying to frost."
+    end
+end
+
+
+confection = Cupcake.new
+confection.prepare
 
 # ex2
-input_number = '+38(050)123-1344'
-                      
-if input_number.match(/^\+\d+\(\d+\)\d+\-\d+$/)
-    
-    puts "This #{input_number} is valid"
+class Rectangle
+  attr_reader :width, :height
+
+  def width=(value)
+    if value < 0
+      raise "Error: width => negative!"
+    end
+    @width = value
+  end
+
+  def height=(value)
+    if value < 0
+      raise "Error: heigh => negative!"
+    end
+    @height = value
+  end
+
+  def area
+    width * height
+  end
 end
+
+class Square < Rectangle
+  def width=(value)
+    @width = value
+    @height = value
+  end
+
+  def height=(value)
+    @width = value
+    @height = value
+  end
+end
+
+
+
+rectangle = Rectangle.new
+rectangle.width = 10
+rectangle.height = -5
+p rectangle.area
