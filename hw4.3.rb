@@ -50,12 +50,12 @@ class Square < Rectangle
   def width=(width)
     super
     @width = width
-    @height = height
+    @height = width
   end
 
   def height=(height)
     super
-    @width = width
+    @width = height
     @height = height
   end
 
