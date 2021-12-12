@@ -23,5 +23,5 @@ require_relative './hw4.1.rb'
 
 class Square < Rectangle; end 
 
-a = Square.new(12, 23)
-puts a.area
+square = Square.new(12, 23)
+puts square.area
