@@ -6,8 +6,8 @@ class Cat
   end
 end 
 
-cat = Cat.new
-cat.meow
+# cat = Cat.new
+# cat.meow
 
 
 # Ex2
@@ -26,13 +26,13 @@ class Rectangle
   end
 end 
 
-rectangle = Rectangle.new(5, 10)
-puts rectangle.area
+# rectangle = Rectangle.new(5, 10)
+# puts rectangle.area
 
 
 # Ex3
 
-class Rectangle 
+class Rectangle
 
   attr_accessor :width, :height
   
@@ -51,5 +51,5 @@ class Rectangle
   end
 end 
 
-rectangle = Rectangle.new(-5, 10)
-puts rectangle.area
+# rectangle = Rectangle.new(-5, 10)
+# puts rectangle.area
