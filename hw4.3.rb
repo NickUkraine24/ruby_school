@@ -58,3 +58,5 @@ square = Square.new
 square.width = 3
 square.height = 2
 square.area
+fff = Square.new(2, 3)
+fff.area
