@@ -1,7 +1,12 @@
 #task1
-def fruits
-
+def fruits(&block)
+    block.call
 end
+
+fruits do 
+    result = ["apple", "orange", "pear", "plum"] 
+    p result
+end 
 
 #task2
 class Receiver
