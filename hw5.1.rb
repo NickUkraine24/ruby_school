@@ -18,12 +18,12 @@ class Receiver
 
     private
     def private_message
-        p "This is private message from #{self}"
+        p "This is private message from #{self.class}"
     end
 
     protected
     def protected_message
-        p "This is protected message from #{self}"
+        p "This is protected message from #{self.class}"
     end
     
 end
@@ -38,7 +38,7 @@ class Mailbox < Receiver
 
     protected
     def mb_protected_message
-        p "This is Mailbox protected message from #{self}"
+        p "This is Mailbox protected message from #{self.class}"
     end
 end
 
