@@ -23,13 +23,13 @@ class Reciever
   protected
 
   def protected_message
-    puts "This is Reciever protected message from #{self}"
+    puts "This is Reciever protected message from #{self.class}"
   end
 
   private
 
   def private_message
-    puts "This is Reciever private message from #{self}"
+    puts "This is Reciever private message from #{self.class}"
   end
 
 end
@@ -47,7 +47,7 @@ class Mailbox < Reciever
   protected
 
   def mb_protected_message
-    puts "This is Mailbox protected message from #{self}"
+    puts "This is Mailbox protected message from #{self.class}"
   end
 
 end
