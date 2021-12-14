@@ -2,12 +2,11 @@
 #
 # ex 1
 
-def fruits(&fruit)
-  result = ["lime"]
-  p result+yield
+def fruits
+    yield
 end
 
-fruits { ["orange", "tangerine", "grape-fruit", "lemon"]}
+p fruits { result = ["orange", "tangerine", "grape-fruit", "lemon"] }
 
 # ex 2
 
