@@ -53,13 +53,19 @@ p "Rectangle_area = #{rectangle.area}"
 end
 
 class Square < Rectangle
-
-    def initialize(width,height)
+    def width=(width)
       @width = width
+      @height = width
+    end
+
+    def height=(height)
+      @width = height
       @height = height
     end
 end
-square = Square.new(3,2)
+square = Square.new
+# square.height = 3
+square.width = 2
 square.area
 p "Square_area = #{square.area}"
 
